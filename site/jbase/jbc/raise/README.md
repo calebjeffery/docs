@@ -27,9 +27,14 @@ Where:
 An example of use is as:
 
 ```
+ValuemarkDelimitedVariable = "A"+@VM+B+@SM+C+@SM+D+@VM+E
 AttributeDelimitedVariable = RAISE(ValuemarkDelimitedVariable)
+CRT AttributeDelimitedVariable
 ```
-
+RESULT
+```
+"A"+@AM+B+@VM+C+@VM+D+@AM+E
+```
 Go back to [jBASE BASIC](./../README.md)
 
 Go back to [Programmers' Reference Guide](./../../reference-guides/jbc/README.md)
